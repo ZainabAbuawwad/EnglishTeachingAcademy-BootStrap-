@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lexicon Academy — Learn English Like It's Spoken</title>
+<meta name="description" content="Lexicon Academy teaches real, confident English through small classes, native tutors and exam-focused courses.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,600&family=Caveat:wght@600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<!-- Custom -->
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-chalk fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Lexicon<span>Academy</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="services.html">All Courses</a></li>
+            <li><a class="dropdown-item" href="services_details.html">Course Details</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gallery</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="portfolio.html">Student Stories</a></li>
+            <li><a class="dropdown-item" href="album.html">Photo Album</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="blog.html">All Posts</a></li>
+            <li><a class="dropdown-item" href="blog_details.html">Latest Post</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <button class="btn btn-book-nav" data-bs-toggle="modal" data-bs-target="#trialModal">Book Free Trial</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO CAROUSEL ================= -->
+<header class="container pt-4 pt-lg-5">
+  <div class="board-frame reveal is-visible">
+    <div id="heroCarousel" class="carousel slide board" data-bs-ride="carousel" data-bs-interval="6000">
+
+      <div class="carousel-indicators carousel-indicators-chalk position-absolute" style="bottom:14px;">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="carousel-caption-full text-start">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <span class="eyebrow">lesson one —</span>
+                <h1 class="display-4 fw-semibold text-white mb-4">
+                  Learn English like it's
+                  <span class="chalk-underline">spoken<svg viewBox="0 0 200 20" preserveAspectRatio="none"><path d="M2,14 Q50,2 100,12 T198,10" fill="none" stroke="#E8C547" stroke-width="4" stroke-linecap="round"/></svg></span>,
+                  not just spelled.
+                </h1>
+                <p class="fs-5 mb-4" style="color:rgba(243,241,231,0.85); max-width:38rem;">
+                  Small classes, native-level tutors, and courses built around real conversation — from your first "hello" to your IELTS band score.
+                </p>
+                <div class="d-flex flex-wrap gap-3">
+                  <button class="btn btn-chalk" data-bs-toggle="modal" data-bs-target="#trialModal">
+                    <i class="bi bi-mortarboard me-2"></i>Book a Free Trial Class
+                  </button>
+                  <a href="services.html" class="btn btn-outline-chalk">Explore Courses</a>
+                </div>
+              </div>
+            </div>
+            <div class="sticky-note note-1 d-none d-lg-block" style="top:8%; right:6%;">98% pass rate ✓</div>
+            <div class="sticky-note note-2 d-none d-lg-block" style="top:58%; right:10%;">try again →</div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="carousel-caption-full text-start">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <span class="eyebrow">lesson two —</span>
+                <h1 class="display-4 fw-semibold text-white mb-4">
+                  Every mistake is
+                  <span class="chalk-underline" style="color:var(--chalk-coral);">just a draft<svg viewBox="0 0 200 20" preserveAspectRatio="none"><path d="M2,14 Q50,2 100,12 T198,10" fill="none" stroke="#E8654A" stroke-width="4" stroke-linecap="round"/></svg></span>.
+                </h1>
+                <p class="fs-5 mb-4" style="color:rgba(243,241,231,0.85); max-width:38rem;">
+                  Our tutors correct with encouragement, not red ink. You'll speak from day one — fluency comes from doing, not memorizing rules.
+                </p>
+                <div class="d-flex flex-wrap gap-3">
+                  <button class="btn btn-chalk" data-bs-toggle="modal" data-bs-target="#trialModal">
+                    <i class="bi bi-chat-dots me-2"></i>Try a Conversation Class
+                  </button>
+                  <a href="about.html" class="btn btn-outline-chalk">Meet Our Method</a>
+                </div>
+              </div>
+            </div>
+            <div class="sticky-note note-3 d-none d-lg-block" style="top:12%; right:8%;">nice try!</div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="carousel-caption-full text-start">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <span class="eyebrow">lesson three —</span>
+                <h1 class="display-4 fw-semibold text-white mb-4">
+                  Ready for
+                  <span class="chalk-underline">IELTS &amp; TOEFL<svg viewBox="0 0 200 20" preserveAspectRatio="none"><path d="M2,14 Q50,2 100,12 T198,10" fill="none" stroke="#E8C547" stroke-width="4" stroke-linecap="round"/></svg></span>?
+                </h1>
+                <p class="fs-5 mb-4" style="color:rgba(243,241,231,0.85); max-width:38rem;">
+                  Structured exam prep with weekly mock tests, examiner-style feedback, and a study plan built around your target score.
+                </p>
+                <div class="d-flex flex-wrap gap-3">
+                  <a href="services_details.html" class="btn btn-chalk"><i class="bi bi-award me-2"></i>See Exam Courses</a>
+                  <a href="contact.html" class="btn btn-outline-chalk">Talk to an Advisor</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= STATS STRIP ================= -->
+<section class="section-pad pb-4">
+  <div class="container">
+    <div class="row g-4 text-center reveal">
+      <div class="col-6 col-lg-3">
+        <div class="stat-num"><span data-count="12400" data-suffix="+">0</span></div>
+        <p class="text-uppercase small fw-semibold" style="letter-spacing:.05em; color:var(--chalk-slate);">Students Taught</p>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="stat-num"><span data-count="35">0</span></div>
+        <p class="text-uppercase small fw-semibold" style="letter-spacing:.05em; color:var(--chalk-slate);">Expert Tutors</p>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="stat-num"><span data-count="98" data-suffix="%">0</span></div>
+        <p class="text-uppercase small fw-semibold" style="letter-spacing:.05em; color:var(--chalk-slate);">Exam Pass Rate</p>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="stat-num"><span data-count="6">0</span></div>
+        <p class="text-uppercase small fw-semibold" style="letter-spacing:.05em; color:var(--chalk-slate);">Course Levels</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COURSES ================= -->
+<section class="section-pad pt-3" id="courses">
+  <div class="container">
+    <div class="row mb-5 reveal">
+      <div class="col-lg-7">
+        <span class="eyebrow">what we teach —</span>
+        <h2 class="fw-semibold">A course for every stage of English</h2>
+        <p class="text-muted">From your first sentence to your exam certificate, pick the track that matches where you are — and where you're headed.</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card card-course p-4">
+          <div class="card-course-icon mb-3"><i class="bi bi-alphabet-uppercase"></i></div>
+          <span class="card-tag mb-2">Levels A1–A2</span>
+          <h5 class="fw-semibold mt-2">Foundations</h5>
+          <p class="text-muted mb-3">Build real vocabulary and grammar instincts from scratch, with zero pressure and lots of speaking practice.</p>
+          <a href="services_details.html" class="fw-semibold text-decoration-none" style="color:var(--chalk-coral);">Learn more <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card card-course p-4">
+          <div class="card-course-icon mb-3"><i class="bi bi-chat-square-text"></i></div>
+          <span class="card-tag mb-2">Levels B1–B2</span>
+          <h5 class="fw-semibold mt-2">Fluency Builder</h5>
+          <p class="text-muted mb-3">Move from "correct" to "natural." Idioms, pacing, and confidence in everyday and workplace conversations.</p>
+          <a href="services_details.html" class="fw-semibold text-decoration-none" style="color:var(--chalk-coral);">Learn more <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card card-course p-4">
+          <div class="card-course-icon mb-3"><i class="bi bi-award"></i></div>
+          <span class="card-tag mb-2">IELTS / TOEFL</span>
+          <h5 class="fw-semibold mt-2">Exam Mastery</h5>
+          <p class="text-muted mb-3">Timed mock tests, examiner-style feedback, and a personal score-improvement plan.</p>
+          <a href="services_details.html" class="fw-semibold text-decoration-none" style="color:var(--chalk-coral);">Learn more <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card card-course p-4">
+          <div class="card-course-icon mb-3"><i class="bi bi-briefcase"></i></div>
+          <span class="card-tag mb-2">Professionals</span>
+          <h5 class="fw-semibold mt-2">Business English</h5>
+          <p class="text-muted mb-3">Emails, meetings, negotiations and presentations — English built for the office, not the textbook.</p>
+          <a href="services_details.html" class="fw-semibold text-decoration-none" style="color:var(--chalk-coral);">Learn more <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card card-course p-4">
+          <div class="card-course-icon mb-3"><i class="bi bi-stars"></i></div>
+          <span class="card-tag mb-2">Ages 7–14</span>
+          <h5 class="fw-semibold mt-2">Kids Club</h5>
+          <p class="text-muted mb-3">Games, songs and stories that build a love of English early — taught by tutors trained for young learners.</p>
+          <a href="services_details.html" class="fw-semibold text-decoration-none" style="color:var(--chalk-coral);">Learn more <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card card-course p-4">
+          <div class="card-course-icon mb-3"><i class="bi bi-people"></i></div>
+          <span class="card-tag mb-2">Drop-in</span>
+          <h5 class="fw-semibold mt-2">Conversation Club</h5>
+          <p class="text-muted mb-3">Weekly themed discussion groups — the low-pressure way to practice speaking with other learners.</p>
+          <a href="services_details.html" class="fw-semibold text-decoration-none" style="color:var(--chalk-coral);">Learn more <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="section-pad bg-soft">
+  <div class="container">
+    <div class="row mb-5 reveal">
+      <div class="col-lg-7">
+        <span class="eyebrow">the path —</span>
+        <h2 class="fw-semibold">How a term at Lexicon works</h2>
+      </div>
+    </div>
+    <div class="row g-4 reveal position-relative">
+      <div class="timeline-line d-none d-md-block"></div>
+      <div class="col-6 col-md-3 timeline-step">
+        <div class="timeline-num bg-soft" style="position:relative; z-index:1;">01</div>
+        <h6 class="fw-semibold mt-2">Assess</h6>
+        <p class="text-muted small">A free placement chat pinpoints your exact level — no guesswork.</p>
+      </div>
+      <div class="col-6 col-md-3 timeline-step">
+        <div class="timeline-num bg-soft" style="position:relative; z-index:1;">02</div>
+        <h6 class="fw-semibold mt-2">Learn</h6>
+        <p class="text-muted small">Small-group or 1:1 classes matched to your level and goals.</p>
+      </div>
+      <div class="col-6 col-md-3 timeline-step">
+        <div class="timeline-num bg-soft" style="position:relative; z-index:1;">03</div>
+        <h6 class="fw-semibold mt-2">Practice</h6>
+        <p class="text-muted small">Conversation Club and speaking labs turn lessons into habits.</p>
+      </div>
+      <div class="col-6 col-md-3 timeline-step">
+        <div class="timeline-num bg-soft" style="position:relative; z-index:1;">04</div>
+        <h6 class="fw-semibold mt-2">Certify</h6>
+        <p class="text-muted small">Sit your exam or graduate the term with a progress report.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT SNIPPET ================= -->
+<section class="section-pad">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 reveal">
+        <div class="board-frame">
+          <div class="board d-flex align-items-center justify-content-center" style="min-height:360px;">
+            <div class="text-center px-4">
+              <i class="bi bi-quote" style="font-size:2.5rem; color:var(--chalk-yellow);"></i>
+              <p class="font-hand fs-3 text-white mb-0">"Confidence first,<br>grammar follows."</p>
+              <p class="small mt-2" style="color:rgba(243,241,231,0.6);">— Lexicon Academy teaching philosophy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 reveal">
+        <span class="eyebrow">who we are —</span>
+        <h2 class="fw-semibold mb-3">Founded by teachers who got tired of textbooks that don't talk back</h2>
+        <p class="text-muted">Lexicon Academy started in 2015 with three tutors and one classroom. Today we're a full academy — but the idea hasn't changed: English is a spoken skill first, and it's best learned in conversation, not silence.</p>
+        <div class="row g-3 my-3">
+          <div class="col-sm-6 d-flex align-items-start gap-2">
+            <i class="bi bi-check-circle-fill" style="color:var(--chalk-coral);"></i>
+            <span class="small">Native &amp; bilingual tutors</span>
+          </div>
+          <div class="col-sm-6 d-flex align-items-start gap-2">
+            <i class="bi bi-check-circle-fill" style="color:var(--chalk-coral);"></i>
+            <span class="small">Max 8 students per class</span>
+          </div>
+          <div class="col-sm-6 d-flex align-items-start gap-2">
+            <i class="bi bi-check-circle-fill" style="color:var(--chalk-coral);"></i>
+            <span class="small">In-person &amp; online options</span>
+          </div>
+          <div class="col-sm-6 d-flex align-items-start gap-2">
+            <i class="bi bi-check-circle-fill" style="color:var(--chalk-coral);"></i>
+            <span class="small">Flexible monthly enrollment</span>
+          </div>
+        </div>
+        <a href="about.html" class="btn btn-chalk mt-2" style="background:var(--chalk-green); color:var(--chalk-white);">Read Our Story</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="section-pad bg-board">
+  <div class="container">
+    <div class="row mb-5 reveal">
+      <div class="col-lg-7">
+        <span class="eyebrow" style="color:var(--chalk-yellow);">in their words —</span>
+        <h2 class="fw-semibold text-white">Students who found their voice</h2>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="quote-card">
+          <span class="quote-mark">"</span>
+          <p class="mb-4">I went from avoiding phone calls to leading meetings in English within eight months. The tutors actually listen.</p>
+          <div class="d-flex align-items-center gap-2">
+            <div class="avatar-initials">MA</div>
+            <div>
+              <div class="fw-semibold small">Mira A.</div>
+              <div class="text-muted small">Business English</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="quote-card">
+          <span class="quote-mark">"</span>
+          <p class="mb-4">Scored a 7.5 on IELTS after six weeks of exam prep. The mock tests felt harder than the real thing — in a good way.</p>
+          <div class="d-flex align-items-center gap-2">
+            <div class="avatar-initials">YK</div>
+            <div>
+              <div class="fw-semibold small">Youssef K.</div>
+              <div class="text-muted small">Exam Mastery</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="quote-card">
+          <span class="quote-mark">"</span>
+          <p class="mb-4">My daughter asks to go to English class. That alone tells you everything about how they teach kids here.</p>
+          <div class="d-flex align-items-center gap-2">
+            <div class="avatar-initials">LR</div>
+            <div>
+              <div class="fw-semibold small">Lina R.</div>
+              <div class="text-muted small">Parent, Kids Club</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BLOG PREVIEW ================= -->
+<section class="section-pad">
+  <div class="container">
+    <div class="row mb-5 reveal">
+      <div class="col-lg-7">
+        <span class="eyebrow">from the notebook —</span>
+        <h2 class="fw-semibold">Tips, notes &amp; stories from the classroom</h2>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 reveal">
+        <div class="card card-course overflow-hidden">
+          <div class="blog-thumb bg-board"><i class="bi bi-mic"></i></div>
+          <div class="p-4">
+            <span class="text-muted small">Speaking · 5 min read</span>
+            <h5 class="fw-semibold mt-1">5 Ways to Practice Speaking Alone</h5>
+            <a href="blog_details.html" class="fw-semibold text-decoration-none" style="color:var(--chalk-coral);">Read post <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal">
+        <div class="card card-course overflow-hidden">
+          <div class="blog-thumb" style="background:var(--chalk-coral);"><i class="bi bi-journal-text"></i></div>
+          <div class="p-4">
+            <span class="text-muted small">Exams · 7 min read</span>
+            <h5 class="fw-semibold mt-1">IELTS Writing: The Band 7 Checklist</h5>
+            <a href="blog_details.html" class="fw-semibold text-decoration-none" style="color:var(--chalk-coral);">Read post <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal">
+        <div class="card card-course overflow-hidden">
+          <div class="blog-thumb" style="background:var(--chalk-slate);"><i class="bi bi-emoji-smile"></i></div>
+          <div class="p-4">
+            <span class="text-muted small">Kids · 4 min read</span>
+            <h5 class="fw-semibold mt-1">Making English Fun for Young Learners</h5>
+            <a href="blog_details.html" class="fw-semibold text-decoration-none" style="color:var(--chalk-coral);">Read post <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5 reveal">
+      <a href="blog.html" class="btn btn-outline-chalk" style="border-color:var(--chalk-green); color:var(--chalk-green);">View All Posts</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ACCORDION ================= -->
+<section class="section-pad bg-soft" id="faq">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 mb-5 reveal">
+        <span class="eyebrow">before you enroll —</span>
+        <h2 class="fw-semibold">Frequently asked questions</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-9 reveal">
+        <div class="accordion accordion-chalk" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                Do I need to take a placement test first?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Yes — a short, free 20-minute placement chat with a tutor. It's conversational, not stressful, and makes sure you're placed in the right level from day one.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                How big are the classes?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Group classes are capped at 8 students. We also offer 1:1 sessions for learners who want a fully personalized pace.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                What's your refund policy if I need to cancel?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">You can cancel up to 7 days before a term starts for a full refund. Full details are on our <a href="return_policy.html">Return Policy</a> page.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                Can I switch between online and in-person classes?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Yes, most courses run in hybrid mode, so you can switch week to week depending on your schedule.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                Do you issue a certificate at the end of a term?
+              </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Yes — every student receives a progress report and a certificate of completion, plus an official score report for exam-prep courses.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA BANNER ================= -->
+<section class="section-pad">
+  <div class="container">
+    <div class="cta-banner p-5 p-lg-5 reveal">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <span class="eyebrow" style="color:var(--chalk-yellow);">last lesson —</span>
+          <h2 class="fw-semibold text-white mb-2">Your first class is on us.</h2>
+          <p class="mb-lg-0" style="color:rgba(243,241,231,0.8);">No commitment, no pressure — just a real class, with a real tutor, so you know exactly what you're signing up for.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+          <button class="btn btn-chalk" data-bs-toggle="modal" data-bs-target="#trialModal">Book Free Trial Class</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer pt-5 pb-4">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="footer-brand mb-2">Lexicon Academy</div>
+        <p class="small">Real English, taught by people who actually talk to you. In-person in the city center, and online everywhere else.</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" class="social-icon" data-bs-toggle="tooltip" title="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-icon" data-bs-toggle="tooltip" title="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-icon" data-bs-toggle="tooltip" title="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="social-icon" data-bs-toggle="tooltip" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6 class="text-white mb-3">Explore</h6>
+        <ul class="list-unstyled small d-flex flex-column gap-2">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Courses</a></li>
+          <li><a href="portfolio.html">Student Stories</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6 class="text-white mb-3">Legal</h6>
+        <ul class="list-unstyled small d-flex flex-column gap-2">
+          <li><a href="privacy_policy.html">Privacy Policy</a></li>
+          <li><a href="return_policy.html">Return Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h6 class="text-white mb-3">Stay in the loop</h6>
+        <p class="small">One email a month — new courses, study tips, no spam.</p>
+        <form class="d-flex gap-2" onsubmit="return false;">
+          <input type="email" class="form-control form-control-chalk" placeholder="you@email.com" aria-label="Email for newsletter">
+          <button class="btn btn-chalk flex-shrink-0" type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    <hr class="my-4" style="border-color:rgba(243,241,231,0.15);">
+    <div class="d-flex flex-column flex-md-row justify-content-between small">
+      <span>&copy; 2026 Lexicon Academy. All rights reserved.</span>
+      <span>123 Grammar Street, Nablus</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= TRIAL BOOKING MODAL ================= -->
+<div class="modal fade" id="trialModal" tabindex="-1" aria-labelledby="trialModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background:var(--chalk-green); color:var(--chalk-white); border:1px solid var(--chalk-slate);">
+      <div class="modal-header" style="border-color:var(--chalk-slate);">
+        <h5 class="modal-title font-display" id="trialModalLabel">Book Your Free Trial Class</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label class="form-label small">Full name</label>
+            <input type="text" class="form-control form-control-chalk" required>
+            <div class="invalid-feedback">Please tell us your name.</div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small">Email address</label>
+            <input type="email" class="form-control form-control-chalk" required>
+            <div class="invalid-feedback">A valid email helps us confirm your class.</div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small">Course of interest</label>
+            <select class="form-select form-select-chalk" required>
+              <option value="" selected disabled>Choose a course...</option>
+              <option>Foundations (A1–A2)</option>
+              <option>Fluency Builder (B1–B2)</option>
+              <option>Exam Mastery (IELTS/TOEFL)</option>
+              <option>Business English</option>
+              <option>Kids Club</option>
+              <option>Conversation Club</option>
+            </select>
+            <div class="invalid-feedback">Please pick a course.</div>
+          </div>
+          <div class="alert alert-success d-none form-success-msg mb-3 py-2">
+            Thanks! We'll email you within 24 hours to schedule your class.
+          </div>
+          <button type="submit" class="btn btn-chalk w-100">Request My Free Class</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Back to top -->
+<button id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
