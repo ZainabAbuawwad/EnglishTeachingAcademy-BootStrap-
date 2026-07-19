@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses — FluentUp</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">FluentUp</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link p-lg-3" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link p-lg-3" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link p-lg-3" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link p-lg-3" href="contact.html">Contact</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link p-lg-3 dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
+              Courses
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="courses.html">All courses</a></li>
+              <li><a class="dropdown-item" href="course-details.html">Course details</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="exams.html">Exams</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success rounded-pill main-btn" type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- COURSES HERO -->
+  <div class="courses-hero text-center">
+    <div class="container">
+      <span class="eyebrow">All courses</span>
+      <h1>Find the course that matches where you are</h1>
+      <p class="fs-6 text-white-50 mb-0">Every course runs in small groups with live speaking practice. Pick a level below, or take our placement quiz if you're not sure where to start.</p>
+    </div>
+  </div>
+
+  <!-- FILTER TAGS (visual only) -->
+  <div class="course-filters py-4">
+    <div class="container d-flex flex-wrap gap-2 justify-content-center">
+      <span class="filter-tag active">All levels</span>
+      <span class="filter-tag">Beginner</span>
+      <span class="filter-tag">Intermediate</span>
+      <span class="filter-tag">Advanced</span>
+      <span class="filter-tag">Exam prep</span>
+    </div>
+  </div>
+
+  <!-- COURSE GRID -->
+  <div class="courses p-5 pt-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="course-card">
+            <div class="course-img" style="background-image:url('https://picsum.photos/id/180/400/260')">
+              <span class="badge-level">Beginner</span>
+            </div>
+            <div class="course-body">
+              <h5>Everyday conversation</h5>
+              <p>Build the confidence to speak naturally in daily situations.</p>
+              <div class="course-meta"><i class="fas fa-clock"></i> 8 weeks &nbsp;·&nbsp; <i class="fas fa-users"></i> Group</div>
+              <a href="course-details.html" class="course-link">View course <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="course-card">
+            <div class="course-img" style="background-image:url('https://picsum.photos/id/60/400/260')">
+              <span class="badge-level">Intermediate</span>
+            </div>
+            <div class="course-body">
+              <h5>Business English</h5>
+              <p>Emails, meetings, and presentations — communicate like a professional.</p>
+              <div class="course-meta"><i class="fas fa-clock"></i> 10 weeks &nbsp;·&nbsp; <i class="fas fa-users"></i> Group</div>
+              <a href="course-details.html" class="course-link">View course <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="course-card">
+            <div class="course-img" style="background-image:url('https://picsum.photos/id/342/400/260')">
+              <span class="badge-level">Advanced</span>
+            </div>
+            <div class="course-body">
+              <h5>Advanced fluency</h5>
+              <p>Debate, nuance, and idiom — sound natural in any conversation.</p>
+              <div class="course-meta"><i class="fas fa-clock"></i> 12 weeks &nbsp;·&nbsp; <i class="fas fa-users"></i> Group</div>
+              <a href="course-details.html" class="course-link">View course <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="course-card">
+            <div class="course-img" style="background-image:url('https://picsum.photos/id/1024/400/260')">
+              <span class="badge-level">Exam prep</span>
+            </div>
+            <div class="course-body">
+              <h5>IELTS preparation</h5>
+              <p>Full-length practice tests, scoring, and strategy for test day.</p>
+              <div class="course-meta"><i class="fas fa-clock"></i> 6 weeks &nbsp;·&nbsp; <i class="fas fa-file-alt"></i> Exam</div>
+              <a href="exams.html" class="course-link">View course <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="course-card">
+            <div class="course-img" style="background-image:url('https://picsum.photos/id/1025/400/260')">
+              <span class="badge-level">Exam prep</span>
+            </div>
+            <div class="course-body">
+              <h5>TOEFL preparation</h5>
+              <p>Focused reading, listening, and writing practice for TOEFL iBT.</p>
+              <div class="course-meta"><i class="fas fa-clock"></i> 6 weeks &nbsp;·&nbsp; <i class="fas fa-file-alt"></i> Exam</div>
+              <a href="exams.html" class="course-link">View course <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="course-card">
+            <div class="course-img" style="background-image:url('https://picsum.photos/id/1027/400/260')">
+              <span class="badge-level">Beginner</span>
+            </div>
+            <div class="course-body">
+              <h5>Pronunciation foundations</h5>
+              <p>Clear, confident pronunciation for everyday speaking situations.</p>
+              <div class="course-meta"><i class="fas fa-clock"></i> 6 weeks &nbsp;·&nbsp; <i class="fas fa-user"></i> Private available</div>
+              <a href="course-details.html" class="course-link">View course <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta text-center p-5">
+    <div class="container">
+      <h2 class="mb-3">Not sure which level fits?</h2>
+      <p class="mb-4">Book a free trial and we'll place you at the right level.</p>
+      <a href="contact.html" class="btn btn-dark-outline rounded-pill">Book your free trial</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5 class="footer-brand">FluentUp</h5>
+          <p class="text-white-50">Helping learners speak with real confidence, one lesson at a time.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h6>Quick links</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h6>Get in touch</h6>
+          <p class="text-white-50 mb-1"><i class="fas fa-envelope me-2"></i>hello@fluentup.com</p>
+          <p class="text-white-50"><i class="fas fa-phone me-2"></i>+1 (555) 010-2030</p>
+          <div class="social-icons mt-3">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <p class="text-center text-white-50 small mb-0">© 2026 FluentUp English Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+</html>

@@ -1,470 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Courses — Lexicon Academy</title>
-<meta name="description" content="Browse all English courses at Lexicon Academy — from Foundations to IELTS/TOEFL exam prep.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,600&family=Caveat:wght@600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services — FluentUp</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar navbar-expand-lg navbar-chalk fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Lexicon<span>Academy</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item active" href="services.html">All Courses</a></li>
-            <li><a class="dropdown-item" href="services_details.html">Course Details</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gallery</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="portfolio.html">Student Stories</a></li>
-            <li><a class="dropdown-item" href="album.html">Photo Album</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="blog.html">All Posts</a></li>
-            <li><a class="dropdown-item" href="blog_details.html">Latest Post</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-      <button class="btn btn-book-nav" data-bs-toggle="modal" data-bs-target="#trialModal">Book Free Trial</button>
-    </div>
-  </div>
-</nav>
-
-<!-- ================= PAGE HEADER ================= -->
-<header class="container pt-4 pt-lg-5">
-  <div class="board-frame">
-    <div class="board d-flex align-items-center" style="min-height:280px;">
-      <div class="p-4 p-lg-5">
-        <span class="eyebrow">the syllabus —</span>
-        <h1 class="display-5 fw-semibold text-white mb-2">Our Courses</h1>
-        <p style="color:rgba(243,241,231,0.75);" class="mb-0">
-          <a href="index.html" class="text-decoration-none" style="color:var(--chalk-yellow);">Home</a> / Courses
-        </p>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">FluentUp</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link p-lg-3" href="index.html#index">Home</a></li>
+          <li class="nav-item"><a class="nav-link p-lg-3" href="about.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link p-lg-3 active" aria-current="page" href="services.html#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link p-lg-3" href="contact.html#contact">Contact</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link p-lg-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Courses
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="courses.html">All courses</a></li>
+              <li><a class="dropdown-item" href="course-details.html">Course details</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="exams.html">Exams</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success rounded-pill main-btn" type="submit">Login</button>
+        </form>
       </div>
     </div>
-  </div>
-</header>
+  </nav>
 
-<!-- ================= FILTER TABS ================= -->
-<section class="pt-5 pb-2">
-  <div class="container">
-    <ul class="nav nav-pills justify-content-center gap-2 reveal" id="courseFilter" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pane-all" type="button" role="tab" style="border-radius:999px;">All</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pane-general" type="button" role="tab" style="border-radius:999px;">General English</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pane-exam" type="button" role="tab" style="border-radius:999px;">Exam Prep</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pane-special" type="button" role="tab" style="border-radius:999px;">Specialized</button>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<!-- ================= COURSE GRID ================= -->
-<section class="section-pad pt-4">
-  <div class="container">
-    <div class="tab-content">
-
-      <!-- ALL -->
-      <div class="tab-pane fade show active" id="pane-all" role="tabpanel">
-        <div class="row g-4">
-
-          <div class="col-md-6 col-lg-4 reveal">
-            <div class="card card-course p-4">
-              <div class="d-flex justify-content-between align-items-start mb-3">
-                <div class="card-course-icon"><i class="bi bi-alphabet-uppercase"></i></div>
-                <span class="card-tag">A1–A2</span>
-              </div>
-              <h5 class="fw-semibold">Foundations</h5>
-              <p class="text-muted small mb-3">Build real vocabulary and grammar instincts from scratch, with zero pressure and lots of speaking practice.</p>
-              <ul class="list-unstyled small text-muted mb-3">
-                <li><i class="bi bi-clock me-2"></i>8 weeks · 2x/week</li>
-                <li><i class="bi bi-people me-2"></i>Max 8 students</li>
-              </ul>
-              <div class="d-flex justify-content-between align-items-center">
-                <span class="fw-semibold" style="color:var(--chalk-green);">$120<span class="text-muted small">/term</span></span>
-                <a href="services_details.html" class="fw-semibold text-decoration-none" style="color:var(--chalk-coral);">Details <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 reveal">
-            <div class="card card-course p-4">
-              <div class="d-flex justify-content-between align-items-start mb-3">
-                <div class="card-course-icon"><i class="bi bi-chat-square-text"></i></div>
-                <span class="card-tag">B1–B2</span>
-              </div>
-              <h5 class="fw-semibold">Fluency Builder</h5>
-              <p class="text-muted small mb-3">Move from "correct" to "natural." Idioms, pacing, and confidence in everyday conversations.</p>
-              <ul class="list-unstyled small text-muted mb-3">
-                <li><i class="bi bi-clock me-2"></i>10 weeks · 2x/week</li>
-                <li><i class="bi bi-people me-2"></i>Max 8 students</li>
-              </ul>
-              <div class="d-flex justify-content-between align-items-center">
-                <span class="fw-semibold" style="color:var(--chalk-green);">$150<span class="text-muted small">/term</span></span>
-                <a href="services_details.html" class="fw-semibold text-decoration-none" style="color:var(--chalk-coral);">Details <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 reveal">
-            <div class="card card-course p-4" style="outline:2px solid var(--chalk-yellow);">
-              <div class="d-flex justify-content-between align-items-start mb-3">
-                <div class="card-course-icon"><i class="bi bi-award"></i></div>
-                <span class="card-tag">IELTS / TOEFL</span>
-              </div>
-              <h5 class="fw-semibold">Exam Mastery <span class="badge" style="background:var(--chalk-coral); font-size:0.65rem; vertical-align:middle;">Popular</span></h5>
-              <p class="text-muted small mb-3">Timed mock tests, examiner-style feedback, and a personal score-improvement plan.</p>
-              <ul class="list-unstyled small text-muted mb-3">
-                <li><i class="bi bi-clock me-2"></i>6 weeks · 3x/week</li>
-                <li><i class="bi bi-people me-2"></i>Max 6 students</li>
-              </ul>
-              <div class="d-flex justify-content-between align-items-center">
-                <span class="fw-semibold" style="color:var(--chalk-green);">$220<span class="text-muted small">/term</span></span>
-                <a href="services_details.html" class="fw-semibold text-decoration-none" style="color:var(--chalk-coral);">Details <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 reveal">
-            <div class="card card-course p-4">
-              <div class="d-flex justify-content-between align-items-start mb-3">
-                <div class="card-course-icon"><i class="bi bi-briefcase"></i></div>
-                <span class="card-tag">Professionals</span>
-              </div>
-              <h5 class="fw-semibold">Business English</h5>
-              <p class="text-muted small mb-3">Emails, meetings, negotiations and presentations — English built for the office.</p>
-              <ul class="list-unstyled small text-muted mb-3">
-                <li><i class="bi bi-clock me-2"></i>8 weeks · 2x/week</li>
-                <li><i class="bi bi-people me-2"></i>Max 6 students</li>
-              </ul>
-              <div class="d-flex justify-content-between align-items-center">
-                <span class="fw-semibold" style="color:var(--chalk-green);">$180<span class="text-muted small">/term</span></span>
-                <a href="services_details.html" class="fw-semibold text-decoration-none" style="color:var(--chalk-coral);">Details <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 reveal">
-            <div class="card card-course p-4">
-              <div class="d-flex justify-content-between align-items-start mb-3">
-                <div class="card-course-icon"><i class="bi bi-stars"></i></div>
-                <span class="card-tag">Ages 7–14</span>
-              </div>
-              <h5 class="fw-semibold">Kids Club</h5>
-              <p class="text-muted small mb-3">Games, songs and stories that build a love of English early, taught by tutors trained for young learners.</p>
-              <ul class="list-unstyled small text-muted mb-3">
-                <li><i class="bi bi-clock me-2"></i>10 weeks · 2x/week</li>
-                <li><i class="bi bi-people me-2"></i>Max 8 students</li>
-              </ul>
-              <div class="d-flex justify-content-between align-items-center">
-                <span class="fw-semibold" style="color:var(--chalk-green);">$110<span class="text-muted small">/term</span></span>
-                <a href="services_details.html" class="fw-semibold text-decoration-none" style="color:var(--chalk-coral);">Details <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 reveal">
-            <div class="card card-course p-4">
-              <div class="d-flex justify-content-between align-items-start mb-3">
-                <div class="card-course-icon"><i class="bi bi-people"></i></div>
-                <span class="card-tag">Drop-in</span>
-              </div>
-              <h5 class="fw-semibold">Conversation Club</h5>
-              <p class="text-muted small mb-3">Weekly themed discussion groups — the low-pressure way to practice speaking with other learners.</p>
-              <ul class="list-unstyled small text-muted mb-3">
-                <li><i class="bi bi-clock me-2"></i>Ongoing · 1x/week</li>
-                <li><i class="bi bi-people me-2"></i>Max 12 students</li>
-              </ul>
-              <div class="d-flex justify-content-between align-items-center">
-                <span class="fw-semibold" style="color:var(--chalk-green);">$40<span class="text-muted small">/month</span></span>
-                <a href="services_details.html" class="fw-semibold text-decoration-none" style="color:var(--chalk-coral);">Details <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- GENERAL -->
-      <div class="tab-pane fade" id="pane-general" role="tabpanel">
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4">
-            <div class="card card-course p-4">
-              <div class="card-course-icon mb-3"><i class="bi bi-alphabet-uppercase"></i></div>
-              <span class="card-tag mb-2">A1–A2</span>
-              <h5 class="fw-semibold mt-2">Foundations</h5>
-              <p class="text-muted small">Build real vocabulary and grammar instincts from scratch.</p>
-              <a href="services_details.html" class="fw-semibold text-decoration-none" style="color:var(--chalk-coral);">Details <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card card-course p-4">
-              <div class="card-course-icon mb-3"><i class="bi bi-chat-square-text"></i></div>
-              <span class="card-tag mb-2">B1–B2</span>
-              <h5 class="fw-semibold mt-2">Fluency Builder</h5>
-              <p class="text-muted small">Move from "correct" to "natural" in everyday conversation.</p>
-              <a href="services_details.html" class="fw-semibold text-decoration-none" style="color:var(--chalk-coral);">Details <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card card-course p-4">
-              <div class="card-course-icon mb-3"><i class="bi bi-people"></i></div>
-              <span class="card-tag mb-2">Drop-in</span>
-              <h5 class="fw-semibold mt-2">Conversation Club</h5>
-              <p class="text-muted small">Weekly themed discussion groups for low-pressure practice.</p>
-              <a href="services_details.html" class="fw-semibold text-decoration-none" style="color:var(--chalk-coral);">Details <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- EXAM -->
-      <div class="tab-pane fade" id="pane-exam" role="tabpanel">
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4">
-            <div class="card card-course p-4">
-              <div class="card-course-icon mb-3"><i class="bi bi-award"></i></div>
-              <span class="card-tag mb-2">IELTS / TOEFL</span>
-              <h5 class="fw-semibold mt-2">Exam Mastery</h5>
-              <p class="text-muted small">Timed mock tests and examiner-style feedback.</p>
-              <a href="services_details.html" class="fw-semibold text-decoration-none" style="color:var(--chalk-coral);">Details <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- SPECIALIZED -->
-      <div class="tab-pane fade" id="pane-special" role="tabpanel">
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4">
-            <div class="card card-course p-4">
-              <div class="card-course-icon mb-3"><i class="bi bi-briefcase"></i></div>
-              <span class="card-tag mb-2">Professionals</span>
-              <h5 class="fw-semibold mt-2">Business English</h5>
-              <p class="text-muted small">Emails, meetings and presentations for the office.</p>
-              <a href="services_details.html" class="fw-semibold text-decoration-none" style="color:var(--chalk-coral);">Details <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card card-course p-4">
-              <div class="card-course-icon mb-3"><i class="bi bi-stars"></i></div>
-              <span class="card-tag mb-2">Ages 7–14</span>
-              <h5 class="fw-semibold mt-2">Kids Club</h5>
-              <p class="text-muted small">Games, songs and stories for young learners.</p>
-              <a href="services_details.html" class="fw-semibold text-decoration-none" style="color:var(--chalk-coral);">Details <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ================= COMPARISON TABLE ================= -->
-<section class="section-pad bg-soft">
-  <div class="container">
-    <div class="row mb-5 reveal">
-      <div class="col-lg-7">
-        <span class="eyebrow">not sure where to start? —</span>
-        <h2 class="fw-semibold">Compare course tracks at a glance</h2>
-      </div>
-    </div>
-    <div class="table-responsive reveal">
-      <table class="table align-middle bg-white" style="border-radius:var(--radius); overflow:hidden;">
-        <thead>
-          <tr style="background:var(--chalk-green); color:var(--chalk-white);">
-            <th>Course</th>
-            <th>Level</th>
-            <th>Duration</th>
-            <th>Class Size</th>
-            <th>Best for</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="fw-semibold">Foundations</td>
-            <td>A1–A2</td>
-            <td>8 weeks</td>
-            <td>8 max</td>
-            <td class="text-muted">Absolute beginners</td>
-          </tr>
-          <tr>
-            <td class="fw-semibold">Fluency Builder</td>
-            <td>B1–B2</td>
-            <td>10 weeks</td>
-            <td>8 max</td>
-            <td class="text-muted">Confident, natural speaking</td>
-          </tr>
-          <tr>
-            <td class="fw-semibold">Exam Mastery</td>
-            <td>C1 target</td>
-            <td>6 weeks</td>
-            <td>6 max</td>
-            <td class="text-muted">IELTS / TOEFL candidates</td>
-          </tr>
-          <tr>
-            <td class="fw-semibold">Business English</td>
-            <td>B2+</td>
-            <td>8 weeks</td>
-            <td>6 max</td>
-            <td class="text-muted">Working professionals</td>
-          </tr>
-          <tr>
-            <td class="fw-semibold">Kids Club</td>
-            <td>Ages 7–14</td>
-            <td>10 weeks</td>
-            <td>8 max</td>
-            <td class="text-muted">Young learners</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- ================= CTA BANNER ================= -->
-<section class="section-pad">
-  <div class="container">
-    <div class="cta-banner p-5 p-lg-5 reveal">
+  <!-- SERVICES HERO -->
+  <div class="services-hero">
+    <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-8">
-          <span class="eyebrow" style="color:var(--chalk-yellow);">not sure which course fits? —</span>
-          <h2 class="fw-semibold text-white mb-2">Take a free placement chat first.</h2>
-          <p class="mb-lg-0" style="color:rgba(243,241,231,0.8);">20 minutes with a tutor tells us exactly where you're starting from.</p>
+        <div class="col-lg-6">
+          <span class="eyebrow">Our services</span>
+          <h1>We help learners speak with real confidence, one lesson at a time</h1>
+          <p class="fs-6 text-white-50">FluentUp is an English academy built around speaking first. We offer a range of services to help learners of all levels improve their conversation skills, from small group classes to private lessons and exam preparation.</p>
         </div>
-        <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
-          <button class="btn btn-chalk" data-bs-toggle="modal" data-bs-target="#trialModal">Book Free Trial Class</button>
+        <div class="col-lg-5 offset-lg-1 d-none d-lg-block">
+          <img src="https://picsum.photos/id/177/460/380" alt="Small group English class in session" class="services-hero-img">
         </div>
       </div>
     </div>
   </div>
-</section>
 
-<!-- ================= FOOTER ================= -->
-<footer class="site-footer pt-5 pb-4">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-lg-4">
-        <div class="footer-brand mb-2">Lexicon Academy</div>
-        <p class="small">Real English, taught by people who actually talk to you. In-person in the city center, and online everywhere else.</p>
-        <div class="d-flex gap-2 mt-3">
-          <a href="#" class="social-icon" data-bs-toggle="tooltip" title="Facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="social-icon" data-bs-toggle="tooltip" title="Instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="social-icon" data-bs-toggle="tooltip" title="YouTube"><i class="bi bi-youtube"></i></a>
-          <a href="#" class="social-icon" data-bs-toggle="tooltip" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+  <!-- SERVICE CARDS -->
+  <div class="services-list p-5">
+    <div class="container">
+      <span class="eyebrow eyebrow-dark">What we offer</span>
+      <h2 class="section-title mb-5">Four ways to learn, one goal</h2>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card feature-card h-100">
+            <div class="card-body">
+              <div class="icon-circle"><i class="fas fa-users"></i></div>
+              <h5 class="card-title">Group classes</h5>
+              <p class="card-text">Small groups of up to 6 students, matched by level, with live speaking practice every session.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card feature-card h-100">
+            <div class="card-body">
+              <div class="icon-circle"><i class="fas fa-user"></i></div>
+              <h5 class="card-title">Private lessons</h5>
+              <p class="card-text">One-on-one sessions built entirely around your goals, pace, and schedule.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card feature-card h-100">
+            <div class="card-body">
+              <div class="icon-circle"><i class="fas fa-file-alt"></i></div>
+              <h5 class="card-title">Exam preparation</h5>
+              <p class="card-text">Focused IELTS and TOEFL prep with practice tests, timing strategy, and scored feedback.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card feature-card h-100">
+            <div class="card-body">
+              <div class="icon-circle"><i class="fas fa-building"></i></div>
+              <h5 class="card-title">Corporate training</h5>
+              <p class="card-text">On-site or online English programs for teams — emails, meetings, and client calls.</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-6 col-lg-2">
-        <h6 class="text-white mb-3">Explore</h6>
-        <ul class="list-unstyled small d-flex flex-column gap-2">
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Courses</a></li>
-          <li><a href="portfolio.html">Student Stories</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2">
-        <h6 class="text-white mb-3">Legal</h6>
-        <ul class="list-unstyled small d-flex flex-column gap-2">
-          <li><a href="privacy_policy.html">Privacy Policy</a></li>
-          <li><a href="return_policy.html">Return Policy</a></li>
-          <li><a href="terms.html">Terms &amp; Conditions</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-4">
-        <h6 class="text-white mb-3">Stay in the loop</h6>
-        <p class="small">One email a month — new courses, study tips, no spam.</p>
-        <form class="d-flex gap-2" onsubmit="return false;">
-          <input type="email" class="form-control form-control-chalk" placeholder="you@email.com" aria-label="Email for newsletter">
-          <button class="btn btn-chalk flex-shrink-0" type="submit">Join</button>
-        </form>
-      </div>
-    </div>
-    <hr class="my-4" style="border-color:rgba(243,241,231,0.15);">
-    <div class="d-flex flex-column flex-md-row justify-content-between small">
-      <span>&copy; 2026 Lexicon Academy. All rights reserved.</span>
-      <span>123 Grammar Street, Nablus</span>
     </div>
   </div>
-</footer>
 
-<!-- ================= TRIAL BOOKING MODAL ================= -->
-<div class="modal fade" id="trialModal" tabindex="-1" aria-labelledby="trialModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content" style="background:var(--chalk-green); color:var(--chalk-white); border:1px solid var(--chalk-slate);">
-      <div class="modal-header" style="border-color:var(--chalk-slate);">
-        <h5 class="modal-title font-display" id="trialModalLabel">Book Your Free Trial Class</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form class="needs-validation" novalidate>
-          <div class="mb-3">
-            <label class="form-label small">Full name</label>
-            <input type="text" class="form-control form-control-chalk" required>
-            <div class="invalid-feedback">Please tell us your name.</div>
+  <!-- FORMAT COMPARISON -->
+  <div class="format-compare p-5">
+    <div class="container">
+      <span class="eyebrow eyebrow-dark">Find your fit</span>
+      <h2 class="section-title mb-5">Not sure which one to pick?</h2>
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="format-card">
+            <h5>Group classes</h5>
+            <span class="format-tag">Most popular</span>
+            <ul>
+              <li><i class="fas fa-check"></i> Live speaking practice every class</li>
+              <li><i class="fas fa-check"></i> Small groups, max 6 students</li>
+              <li><i class="fas fa-check"></i> Flexible weekly schedule</li>
+              <li><i class="fas fa-check"></i> Best for steady, social progress</li>
+            </ul>
+            <a href="index.html#contact" class="course-link">Book a free trial <i class="fas fa-arrow-right"></i></a>
           </div>
-          <div class="mb-3">
-            <label class="form-label small">Email address</label>
-            <input type="email" class="form-control form-control-chalk" required>
-            <div class="invalid-feedback">A valid email helps us confirm your class.</div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="format-card">
+            <h5>Private lessons</h5>
+            <span class="format-tag">Fastest progress</span>
+            <ul>
+              <li><i class="fas fa-check"></i> 100% focused on your goals</li>
+              <li><i class="fas fa-check"></i> Schedule built around you</li>
+              <li><i class="fas fa-check"></i> Direct, constant feedback</li>
+              <li><i class="fas fa-check"></i> Best for tight deadlines</li>
+            </ul>
+            <a href="index.html#contact" class="course-link">Book a free trial <i class="fas fa-arrow-right"></i></a>
           </div>
-          <div class="mb-3">
-            <label class="form-label small">Course of interest</label>
-            <select class="form-select form-select-chalk" required>
-              <option value="" selected disabled>Choose a course...</option>
-              <option>Foundations (A1–A2)</option>
-              <option>Fluency Builder (B1–B2)</option>
-              <option>Exam Mastery (IELTS/TOEFL)</option>
-              <option>Business English</option>
-              <option>Kids Club</option>
-              <option>Conversation Club</option>
-            </select>
-            <div class="invalid-feedback">Please pick a course.</div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="format-card">
+            <h5>Exam preparation</h5>
+            <span class="format-tag">Goal-driven</span>
+            <ul>
+              <li><i class="fas fa-check"></i> Full-length practice tests</li>
+              <li><i class="fas fa-check"></i> Scored, detailed feedback</li>
+              <li><i class="fas fa-check"></i> Timing and strategy coaching</li>
+              <li><i class="fas fa-check"></i> Best for IELTS / TOEFL targets</li>
+            </ul>
+            <a href="index.html#contact" class="course-link">Book a free trial <i class="fas fa-arrow-right"></i></a>
           </div>
-          <div class="alert alert-success d-none form-success-msg mb-3 py-2">
-            Thanks! We'll email you within 24 hours to schedule your class.
-          </div>
-          <button type="submit" class="btn btn-chalk w-100">Request My Free Class</button>
-        </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<button id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+  <!-- CTA -->
+  <div class="cta text-center p-5">
+    <div class="container">
+      <h2 class="mb-3">Still deciding? Just start with a free trial</h2>
+      <p class="mb-4">We'll help you find the right fit once you've sat in on a class.</p>
+      <a href="contact.html" class="btn btn-dark-outline rounded-pill">Book your free trial</a>
+    </div>
+  </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/script.js"></script>
+  <!-- FOOTER -->
+  <footer class="footer p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5 class="footer-brand">FluentUp</h5>
+          <p class="text-white-50">Helping learners speak with real confidence, one lesson at a time.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h6>Quick links</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#courses">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h6>Get in touch</h6>
+          <p class="text-white-50 mb-1"><i class="fas fa-envelope me-2"></i>hello@fluentup.com</p>
+          <p class="text-white-50"><i class="fas fa-phone me-2"></i>+1 (555) 010-2030</p>
+          <div class="social-icons mt-3">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <p class="text-center text-white-50 small mb-0">© 2026 FluentUp English Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
 </body>
 </html>
